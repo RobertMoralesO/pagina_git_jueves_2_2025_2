@@ -1,15 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primera página</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi primera página</title>
+  <!-- Vinculamos el CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <center>
-        <h1>Imagen aleatoria de picsum</h1>
-        <img src="https://picsum.photos/600/600" alt="Imagen aleatoria de picsum">
-        <br>
-    </center>
+  <article class="card">
+    <header class="card-header">
+      <h1>Imagen aleatoria de Picsum</h1>
+    </header>
+
+    <div class="media">
+      <img id="img" src="https://picsum.photos/600/600" alt="Imagen aleatoria de Picsum">
+    </div>
+
+    <div class="card-body">
+      <p>Haz clic en el botón para recargar otra imagen aleatoria.</p>
+      <button class="btn" id="reloadBtn">🔄 Nueva imagen</button>
+    </div>
+  </article>
+
+  <!-- Vinculamos el JS -->
+  <script src="script.js"></script>
 </body>
 </html>
